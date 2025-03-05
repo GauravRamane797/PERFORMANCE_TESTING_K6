@@ -10,6 +10,6 @@ export const options = {
 }
 
 export default function(){
-    http.get('https://run.mocky.io/v3/917c3927-9031-4110-9d26-c4859276378a');
-    http.get('https://run.mocky.io/v3/e00a58ff-07fb-4ade-a09d-1702f568edee?mocky-delay=1000ms');
+    http.get('https://run.mocky.io/v3/c749013d-9ba7-4ebd-a273-6aa13c6da897');
+    http.get('https://run.mocky.io/v3/16ac77fd-35bb-4fe9-9969-e70e39adef51?mocky-delay=1000ms');
 }
