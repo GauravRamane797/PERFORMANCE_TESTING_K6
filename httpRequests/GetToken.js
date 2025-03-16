@@ -10,13 +10,13 @@ export default function(){
     let param = {
         headers :{ 'Content-Type':'application/json'}
     }
-    let res = http.post(`https://test-api.k6.io/user/register/, payload, param`)
+    let res = http.post(`https://test-api.k6.io/user/register/`, payload, param)
 
     check(res,{
         'Valiadate Status': (r) => r.status === 201
     })
 
-    let tokenRes = http.post(`https://test-api.k6.io/auth/token/login/, payload, param`)
+    let tokenRes = http.post(`https://test-api.k6.io/auth/token/login/`, payload, param)
     let token = tokenRes.json()
 
     console.log("Token", token)
